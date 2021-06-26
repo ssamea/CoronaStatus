@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context=".Detatil_info"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="@color/colorIvory"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ddd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:transitionName="imageTransition"
+            app:srcCompat="@drawable/corona" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <EditText
+                android:background="@drawable/btn_style"
+                android:id="@+id/date"
+                android:layout_width="700px"
+                android:layout_height="100px"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+
+                android:text="검색" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/dateView"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Date : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/dateValue"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dayDecideCnt"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="일일확진자 : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10px"
+            android:background="@drawable/box"
+            >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/mask"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/decideText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확진자"
+                    android:textColor="#000000"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/decide_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0dfsdf"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10px"
+            android:background="@drawable/box_edge_white"
+            >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/die"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/deathText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사망자"
+                    android:textColor="#000000"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/death_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0sfsd"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10px"
+            android:background="@drawable/box_edge_white"
+            >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/treat"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/examText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="검사진행"
+                    android:textColor="#000000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/exam_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0dfsdf"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10px"
+            android:background="@drawable/box_edge"
+            >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/search"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addExamText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="결과음성"
+                    android:textColor="#000000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/acc_exam_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0sfsd"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10px"
+            android:background="@drawable/box_edge"
+            >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/pill"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/careText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="치료중"
+                    android:textColor="#000000"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/care_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0dfsdf"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10px"
+            android:background="@drawable/box_edge_white"
+            >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/run"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/clearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="격리해제"
+                    android:textColor="#000000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/clear_cnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0sfsd"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

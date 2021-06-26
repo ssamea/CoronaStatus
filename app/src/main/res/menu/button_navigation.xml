@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_check"
+
+        android:title="자가진단"/>
+    <item
+        android:id="@+id/nav_home"
+
+        android:title="현황"/>
+    <item
+        android:id="@+id/nav_market"
+
+        android:title="마켓"/>
+</menu>
