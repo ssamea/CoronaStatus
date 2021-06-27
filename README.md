@@ -12,3 +12,5 @@
   될 때가 많다고 함. 일단 사이트에 문의해둠
  
 - 메인 엑티비티 추가 기능 및 애플리케이션 실행 시 첫 액티비티를 애니메이션을 활용해봤음. 카카오톡처럼
+![main화면](https://user-images.githubusercontent.com/49589578/123546855-62a6d180-d799-11eb-976a-4c6d00f1ea41.JPG)
+![start화면](https://user-images.githubusercontent.com/49589578/123546857-633f6800-d799-11eb-800f-639ccd78d322.JPG)
