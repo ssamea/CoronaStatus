@@ -24,5 +24,7 @@
 - Fragment를 이용한 날짜 검색 시 일일 코로나 확진자 정보 기능 V
 - Fragment를 이용한 자가 문진표 작성 기능 v
 - 기본적인 UI를 좀더 보완해야 함
+<br>
 ![1](https://user-images.githubusercontent.com/49589578/123602401-a9490a00-d833-11eb-9c29-f8c0ae6b52ff.jpg)
 ![2](https://user-images.githubusercontent.com/49589578/123602408-aa7a3700-d833-11eb-8627-efe74222e550.jpg)
+</br>
