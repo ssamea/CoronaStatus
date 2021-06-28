@@ -13,4 +13,8 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorIvory">#C5C8EB</color>
     <color name="colorBlue">#435F85</color>
+    <color name="deepRed">#EA5148</color>
+    <color name="yellow">#EA5148</color>
+    <color name="paleRed">#f2a49d</color>
+
 </resources>

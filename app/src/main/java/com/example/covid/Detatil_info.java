@@ -104,32 +104,33 @@ public class Detatil_info extends Fragment {
                 DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
                 DocumentBuilder db = dbf.newDocumentBuilder();
                 StringBuilder urlBuilder = new
-                        StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
-                        //StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D&pageNo=1&numOfRows=10&startCreateDt="+data+"&endCreateDt="+data); /*URL*/
-                String serviceKey = "aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D\n"; /*Service Key*/
-                String serviceKeyDecoded = URLDecoder.decode(serviceKey, "UTF-8");
-                urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=" + URLEncoder.encode(serviceKeyDecoded, "UTF-8")); /*공공데이터포털에서 받은 인증키*/
-                urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
-                urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
-                urlBuilder.append("&" + URLEncoder.encode("startCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200310", "UTF-8")); /*검색할 생성일 범위의 시작*/
-                urlBuilder.append("&" + URLEncoder.encode("endCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200315", "UTF-8")); /*검색할 생성일 범위의 종료*/
+                        //StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
+                        StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D&pageNo=1&numOfRows=10&startCreateDt="+data+"&endCreateDt="+data); /*URL*/
+
+               // String serviceKey = "aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D\n"; /*Service Key*/
+                //String serviceKeyDecoded = URLDecoder.decode(serviceKey, "UTF-8");
+               // urlBuilder.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=" + URLEncoder.encode(serviceKeyDecoded, "UTF-8")); /*공공데이터포털에서 받은 인증키*/
+               // urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
+               // urlBuilder.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
+                //urlBuilder.append("&" + URLEncoder.encode("startCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200310", "UTF-8")); /*검색할 생성일 범위의 시작*/
+                //urlBuilder.append("&" + URLEncoder.encode("endCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200315", "UTF-8")); /*검색할 생성일 범위의 종료*
 
                 Log.i("성공","1번");
 
 
                 data=Integer.toString(Integer.parseInt(data)-1);
                 StringBuilder urlBuilder2 = new
-                        StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
-                //StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D&pageNo=1&numOfRows=10&startCreateDt="+data+"&endCreateDt="+data); /*URL*/
-                String serviceKey2 = "aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D\n";
-                String serviceKeyDecoded2 = URLDecoder.decode(serviceKey2, "UTF-8");
-                urlBuilder2.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=" + URLEncoder.encode(serviceKeyDecoded2, "UTF-8")); /*공공데이터포털에서 받은 인증키*/
-                urlBuilder2.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
-                urlBuilder2.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
-                urlBuilder2.append("&" + URLEncoder.encode("startCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200310", "UTF-8")); /*검색할 생성일 범위의 시작*/
-                urlBuilder2.append("&" + URLEncoder.encode("endCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200315", "UTF-8")); /*검색할 생성일 범위의 종료*/
+                        //StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
+                        StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D&pageNo=1&numOfRows=10&startCreateDt="+data+"&endCreateDt="+data); /*URL*/
 
-                //StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D&pageNo=1&numOfRows=10&startCreateDt="+data+"&endCreateDt="+data); /*URL*/
+                //String serviceKey2 = "aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D\n";
+                //String serviceKeyDecoded2 = URLDecoder.decode(serviceKey2, "UTF-8");
+                //urlBuilder2.append("?" + URLEncoder.encode("serviceKey", "UTF-8") + "=" + URLEncoder.encode(serviceKeyDecoded2, "UTF-8")); /*공공데이터포털에서 받은 인증키*/
+                //urlBuilder2.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
+                //urlBuilder2.append("&" + URLEncoder.encode("numOfRows", "UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
+                //urlBuilder2.append("&" + URLEncoder.encode("startCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200310", "UTF-8")); /*검색할 생성일 범위의 시작*/
+                //urlBuilder2.append("&" + URLEncoder.encode("endCreateDt", "UTF-8") + "=" + URLEncoder.encode("20200315", "UTF-8")); /*검색할 생성일 범위의 종료*/
+                
                 Log.i("성공","1번");
 
 

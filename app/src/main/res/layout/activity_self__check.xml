@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context=".Self_Check"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/paleRed" />
+        <ImageView
+            android:layout_width="121dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="140dp"
+            android:src="@drawable/checklist" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edge"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:textFontWeight="600"
+                android:id="@+id/que1"
+                android:lineSpacingExtra="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/binggraebold"
+                android:text="Q. 최근 14일 이내에 해외를 방문한 적이 있습니까 ?"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:textFontWeight="600"
+                android:id="@+id/que2"
+                android:lineSpacingExtra="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/binggraebold"
+                android:text="Q. 현재 발열(37.5 ℃ 이상), 기침, 호흡곤란, 몸살, 두통, 인후통, 폐렴 등의 증상이 있습니까 ? "
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textFontWeight="600"
+                android:id="@+id/que3"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/binggraebold"
+                android:text="Q. 최근 14일 이내에 국내 집단발생 지역 또는 시설을 방문한 적이 있습니까 ? "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:textFontWeight="600"
+                android:id="@+id/que4"
+                android:lineSpacingExtra="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/binggraebold"
+                android:text="Q. 지인(가족, 친구, 동료 등) 중 코로나19(의심)환자, 자가격리 대상자가 있습니까? "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textFontWeight="600"
+                android:id="@+id/que5"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/binggraebold"
+                android:text="Q. 최근 사람이 많은 장소에 돌아다니신 적 있으신가요 ? "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <com.spark.submitbutton.SubmitButton
+            android:id="@+id/spark_button"
+            android:layout_width="109dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center_horizontal"
+            android:text="확인"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:sub_btn_background="@color/colorBlue"
+            app:sub_btn_duration="1800"
+            app:sub_btn_line_color="@color/colorBlue"
+            app:sub_btn_ripple_color="@color/colorBlue"
+            app:sub_btn_tick_color="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>

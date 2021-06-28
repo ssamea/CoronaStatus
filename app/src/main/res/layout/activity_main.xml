@@ -19,7 +19,7 @@
         android:id="@+id/bottomNavi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@color/colorIvory"
+        app:itemBackground="@color/paleRed"
         app:itemIconTint="#000000"
         app:itemTextColor="#000000"
         app:menu="@menu/button_navigation"
