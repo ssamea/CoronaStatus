@@ -25,5 +25,6 @@
 - Fragment를 이용한 자가 문진표 작성 기능 v
 - 기본적인 UI를 좀더 보완해야 함
 
-<img src = "https://user-images.githubusercontent.com/49589578/123602401-a9490a00-d833-11eb-9c29-f8c0ae6b52ff.jpg" width="100%" height="height 100%">
-![2](https://user-images.githubusercontent.com/49589578/123602408-aa7a3700-d833-11eb-8627-efe74222e550.jpg)
+<img src = "https://user-images.githubusercontent.com/49589578/123602401-a9490a00-d833-11eb-9c29-f8c0ae6b52ff.jpg" width="30%" height="height 30%">
+
+<img src = "https://user-images.githubusercontent.com/49589578/123602408-aa7a3700-d833-11eb-8627-efe74222e550.jpg" width="30%" height="height 30%">
