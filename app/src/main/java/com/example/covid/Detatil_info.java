@@ -101,8 +101,6 @@ public class Detatil_info extends Fragment {
         @Override
         protected String doInBackground(String... integers){
             try {
-                DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-                DocumentBuilder db = dbf.newDocumentBuilder();
                 StringBuilder urlBuilder = new
                         //StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
                         StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?serviceKey=aOKXvfshZJPd1moqnd%2FPfzkE5I5SGKANDf26uGzQZFOje1JSgylw99l8Hc5L3rib%2FR3PE0PFUFpUZLAPvsg24A%3D%3D&pageNo=1&numOfRows=10&startCreateDt="+data+"&endCreateDt="+data); /*URL*/

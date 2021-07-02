@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COVID"
         android:usesCleartextTraffic="true">
-        <activity android:name=".result"></activity>
+        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".result" />
         <activity android:name=".Self_Check" />
         <activity android:name=".RunningActivity">
             <intent-filter>

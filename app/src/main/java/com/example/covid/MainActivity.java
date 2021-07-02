@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction ft;
     private Detatil_info mainFragment;
     private Self_Check checkFragment;
+    private MarketList marketFragment;
 
 
     @Override
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         mainFragment=new Detatil_info();
         checkFragment=new Self_Check();
-
+        marketFragment=new MarketList();
         setFrag(0); // 첫 프래그먼트 화면 지정
     }
     private void setFrag(int n)
@@ -78,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                 ft.commit();
                 break;
 
+            case 2:
+                ft.replace(R.id.Main_Frame,marketFragment);
+                ft.commit();
+                break;
         }
     }
 
