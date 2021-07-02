@@ -28,3 +28,22 @@
 <img src = "https://user-images.githubusercontent.com/49589578/123602401-a9490a00-d833-11eb-9c29-f8c0ae6b52ff.jpg" width="30%" height="height 30%">
 
 <img src = "https://user-images.githubusercontent.com/49589578/123602408-aa7a3700-d833-11eb-8627-efe74222e550.jpg" width="30%" height="height 30%">
+
+
+### 2021-06-29 ~ 07-01
+- 갑자기 확진자를 구하는 부분에서 잘 되던 부분이 에러가 났다.
+- 에러코드는 java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+- 정말 아이러니하다.. 분명히 위 사진 처럼 잘 되던 기능이 갑자기 안된다. 구글링을 해본 결과 나와는 좀 다른 상황이지만 대부분 스트링 배열의 제한 용량을
+  초과한 에러이다. 하지만 내거는 아닌데..
+  
+ ### 2021-07-01 ~ 02
+ - 혹 에뮬레이터가 이상이 있나 싶어 usb테더링 후 내 스마트폰에다 앱을 설치한 결과 정상으로 다시 출력된다....
+ - 왜 그런지 모르겠지만 에뮬레이터에서 실행하면 out of index 에러가 나온다. 다른 스마트폰으로도 테스트해봐도 정상적으로 출력된다. 원인을 좀 더 알아봐야겠음
+ - Fragment 액티비티를 활용하여 마켓 기능을 구현 v
+ -> URI로 옥션 주소를 뿌려서 마스크와 손세정제 목록을 가져온다. v
+ -> 뿌려진 리스트에서 구매 버튼을 누르면 bootpay api 를 활용한 기능을 구현해야한다.(boot api 에 대해 좀 구글링하면서 공부중)
+ 
+ <img src = "https://user-images.githubusercontent.com/49589578/124302242-e5fe6380-db9b-11eb-9f7d-fe8837180a79.jpg" width="30%" height="height 30%">
+
+<img src = "https://user-images.githubusercontent.com/49589578/124302244-e72f9080-db9b-11eb-9bce-93c8fbb6265e.jpg" width="30%" height="height 30%">
+
