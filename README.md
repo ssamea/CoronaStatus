@@ -50,3 +50,8 @@
 
 <img src = "https://user-images.githubusercontent.com/49589578/124302244-e72f9080-db9b-11eb-9bce-93c8fbb6265e.jpg" width="30%" height="height 30%">
 
+### 2021-07-11~12
+- bootpay api를 활용하여 실제 결제 기능까지 만들었다. v
+- toss, 카드결제를 이용한 구매 기능 v
+<img src = "https://user-images.githubusercontent.com/49589578/127087268-b2899d46-b324-402f-87d2-034d71059ad5.JPG" width="30%" height="height 30%">
+<img src = "https://user-images.githubusercontent.com/49589578/127087270-642b376f-6678-4526-a229-0bf4be9aaee0.JPG" width="30%" height="height 30%">
