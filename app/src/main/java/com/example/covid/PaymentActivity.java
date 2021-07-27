@@ -35,7 +35,7 @@ public class PaymentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
-        BootpayAnalytics.init(this, "");
+        BootpayAnalytics.init(this, "60f82a8b23868400210e52cb");
         Intent intent=getIntent();
         payment=findViewById(R.id.payment);
         itemName=findViewById(R.id.itemName);
