@@ -4,6 +4,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import kr.co.bootpay.Bootpay;
 import kr.co.bootpay.BootpayAnalytics;
+import kr.co.bootpay.enums.Method;
+import kr.co.bootpay.enums.PG;
 import kr.co.bootpay.enums.UX;
 import kr.co.bootpay.listener.CancelListener;
 import kr.co.bootpay.listener.CloseListener;
@@ -15,6 +17,9 @@ import kr.co.bootpay.model.BootExtra;
 import kr.co.bootpay.model.BootUser;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,6 +41,8 @@ public class PaymentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
         BootpayAnalytics.init(this, "60f82a8b23868400210e52cb");
+        //BootpayAnalytics.init(this, "60f82a8b23868400210e52cb");
+        //BootpayAnalytics.init(this, "60f82a8b23868400210e52cb");
         Intent intent=getIntent();
         payment=findViewById(R.id.payment);
         itemName=findViewById(R.id.itemName);
@@ -76,6 +83,8 @@ public class PaymentActivity extends AppCompatActivity {
 
         Bootpay.init(getFragmentManager())
                 .setApplicationId("60f82a8b23868400210e52cb") // 해당 프로젝트(안드로이드)의 application id 값
+                //.setPG(PG.TOSS) // 결제할 PG 사
+                //.setMethod(Method.CARD) // 결제수단
                 .setContext(this)
                 .setBootUser(bootUser)
                 .setBootExtra(bootExtra)
@@ -132,4 +141,5 @@ public class PaymentActivity extends AppCompatActivity {
                         })
                 .request();
     }
+
 }
